@@ -12,6 +12,28 @@ body{
     background-color: #22B573;
     position: relative;
     border: 2px solid #006837;
+    animation: myanimation 1.5s;
+}
+
+@keyframes myanimation{
+    from{
+        left: -2000px;
+    }
+    to{
+        left: 0;
+    }
+}
+ul{
+    position: absolute;
+    animation: my-animation-2 2s;
+}
+@keyframes my-animation-2{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 40px;
+    }
 }
 li{
     display: inline-block;
@@ -21,6 +43,9 @@ li > a{
     color: white;
     text-transform: uppercase;
     margin-right: 46px;
+}
+.nav-a:hover{
+    color: red;
 }
 nav{
     padding-top: 40px;
@@ -34,6 +59,10 @@ img{
     position: absolute;
     right: 28px;
     top: 37px;
+    transition: 1s all;
+}
+img:hover{
+    transform: translate(1000px);
 }
 .white-box{
     position: absolute;
